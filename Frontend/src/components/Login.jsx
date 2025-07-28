@@ -21,7 +21,7 @@ export default function Login() {
     setLoading(true);
 
     try {
-      const response = await axios.post('http://localhost:9090/api/login', formData);
+      const response = await axios.post('https://oms-order-management-system-1.onrender.com/api/login', formData);
 
       localStorage.setItem('token', response.data.token);
       localStorage.setItem('role', response.data.user.role);

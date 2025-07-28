@@ -22,7 +22,7 @@ export default function Register() {
     setLoading(true);
 
     try {
-      await axios.post('http://localhost:9090/api/register', formData);
+      await axios.post('https://oms-order-management-system-1.onrender.com/api/register', formData);
       alert('Registration successful! Redirecting to login...');
       setTimeout(() => navigate('/'), 1000);
     } catch (err) {

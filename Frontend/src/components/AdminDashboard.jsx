@@ -23,7 +23,7 @@ const AdminDashboard = () => {
   const handleAction = async (orderId, action) => {
     try {
       await axios.post(
-        `http://localhost:9090/api/product/order/${orderId}/finalize`,
+        `https://oms-order-management-system-1.onrender.com/api/product/order/${orderId}/finalize`,
         { action },
         { headers: { Authorization: `Bearer ${token}` } }
       );
